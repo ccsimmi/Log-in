@@ -5,6 +5,35 @@ body {
     overflow: hidden;
 }
 
+.email {
+    position: absolute;
+    top: 15.5em;
+    left: 46.5em;
+    color: #183446;
+}
+
+.leftbox h1 {
+    color:white;
+    padding-top: 5em;
+    text-align: center;
+}
+
+.leftbox p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: -15px;
+    line-height: 1.4em;
+    font-size: 16px;
+}
+
+.middlebox h1 {
+    color: #183446;
+    text-align: center;
+    padding-top: 1em;
+}
+
+
 
 .container {
     display: flex;
@@ -15,14 +44,13 @@ body {
     height: 95vh;
 }
 
-
-
 .leftbox {
     background-color: #183446;
     width: 325px;
     height: 500px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    box-shadow: 15px 20px 34px 8px rgba(41, 41, 45, 0.31);
 }
 
 
@@ -33,17 +61,71 @@ body {
     height: 500px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-
+    box-shadow: 15px 20px 34px 8px rgba(41, 41, 45, 0.31);
 }
 
-/*
-.rightbox {
-    background-color: #34623F;
-    width: 75px;
-    height: 300px;
-    border-top-right-radius: 75px;
-    border-bottom-right-radius: 75px;
+.middlecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 570px;
+    height: 490px;
+    border-radius: 25px;
 }
 
-*/
+.imagecontainer {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    position: relative;
+    top: -30px;
+}
+
+input {
+    width: 80%;
+    padding: 20px;
+    margin-top: -10px;
+    background-color: #DBD8F0;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+
+button {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    background-color: #183446;
+    color: white;
+    border-radius: 25px;
+    margin-bottom: -20px;
+    outline: none;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+img {
+    height: 30px;
+    padding: 10px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+p a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    font-size: 1.1em;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
 
