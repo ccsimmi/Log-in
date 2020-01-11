@@ -3,33 +3,43 @@
     <head>
         <title> Log in </title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Acme|Nunito&display=swap');
+            </style>
     </head>
     <body>
+        <!-- Flexbox on layout -->
         <div class="container">
+            <!-- left box is blue-->
             <div class="leftbox">
                 <h1> Welcome back!</h1>
                 <p> It's great to see you again! Sign in to keep yourself connected.</p>
             </div>
 
             <div class="middlebox">
+                <!-- Flexbox  inside the flexed middle containter (white)-->
                 <div class="middlecontainer">
                     <h1> Sign in </h1>
+                        <!-- Flexbox of the images, nested within the flexed white container-->
                         <div class="imagecontainer">
                             <a href="#"><img src="iconmonstr-facebook-3-64.png" alt="facebook"></a>
                             <a href="#"><img src="iconmonstr-twitter-3-64.png" alt="twitter"></a>
                             <a href="#"><img src="iconmonstr-google-plus-3-64.png" alt="google"></a>
                         </div>
-                        
-                        
+                        <!-- Single sentence between flexed images and flexed container-->
+                        <div class="email"> Or, enter your email down below</div>
+                    <!-- Form sheet-->
                     <form action="/#"></form>
                         <input type="text" placeholder="Username" required>
                         <input type="password" placeholder="Password" required>
                         <button type="submit"> Sign in </button>
                     </form>
+                    <!-- Password retrieval link-->
                     <p> <a href="#"> Forgot your password? </a> </a></p>
                 </div>
             </div>
         </div>
-        <div class="email"> Or, enter your email down below</div>
+
+       
     </body>
 </html>
